@@ -1,2 +1,2 @@
 # Quizz
-A little Android Quizz App.
+A little Android Quiz App.
