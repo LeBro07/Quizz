@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Bestzeiten">
+
+        <Preference
+            android:key="bestTimeSmall"
+            android:title="Bestzeit klein"
+            android:summary="%d"
+            android:defaultValue="0"/>
+
+        <Preference
+            android:key="bestTimeNormal"
+            android:title="Bestzeit mittel"
+            android:summary="%d"/>
+
+        <Preference
+            android:key="bestTimeLarge"
+            android:title="Bestzeit groß"
+            android:summary="%d"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

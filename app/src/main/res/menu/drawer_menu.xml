@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/mainMenu"
+            android:icon="@drawable/ic_start"
+            android:title="@string/mainMenu" />
+        <item
+            android:id="@+id/rulesMenu"
+            android:icon="@drawable/ic_rules"
+            android:title="@string/textRules" />
+    </group>
+
+    <item android:title="@string/settings">
+        <menu>
+            <item
+                android:id="@+id/settingsMenu"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/settings" />
+        </menu>
+    </item>
+
+    <item android:title="@string/about">
+        <menu>
+            <item
+                android:id="@+id/aboutMenu"
+                android:icon="@drawable/ic_about"
+                android:title="@string/about" />
+            <item
+                android:id="@+id/gitLink"
+                android:icon="@drawable/icon_code"
+                android:title="@string/gitLink" />
+        </menu>
+    </item>
+
+
+</menu>

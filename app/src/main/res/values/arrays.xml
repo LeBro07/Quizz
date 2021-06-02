@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="roundArray">
+        <item>klein (10 Fragen)</item>
+        <item>mittel (15 Fragen)</item>
+        <item>groß (20 Fragen)</item>
+    </string-array>
+</resources>

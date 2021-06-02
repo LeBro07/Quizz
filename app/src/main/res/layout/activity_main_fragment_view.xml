@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabAlignmentMode="center"
+            app:fabCradleMargin="12dp"
+            app:fabCradleRoundedCornerRadius="16dp"
+            app:fabCradleVerticalOffset="16dp"
+            app:navigationIcon="@drawable/ic_menu"
+            app:theme="@style/myTimerStyle" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorSecondaryDark"
+            android:src="@drawable/ic_start"
+            android:tint="@color/colorSecondaryDark"
+            app:backgroundTint="@color/colorSecondaryDark"
+            app:layout_anchor="@id/bottom_app_bar"
+            app:maxImageSize="38dp"
+            app:rippleColor="@color/colorSecondary" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frag_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/coordLayout"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
